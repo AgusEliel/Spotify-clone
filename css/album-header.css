@@ -1,0 +1,48 @@
+.albumHeader {
+    display: flex;
+    gap: 2rem;
+}
+
+.albumHeader-cover {
+    inline-size: 13rem;
+    block-size: 13rem;
+    background-size: cover;
+}
+
+.albumHeader-title {
+    margin-block-start: 1.5rem;
+    font-size: 6rem;
+    color: var(--white);
+}
+
+
+.albumHeader-data {
+    font: var(--baseFont);
+    font-size: .875rem;
+    color: var(--white);
+    margin-block-start: 1rem;
+}
+
+.albumHeader-album {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.albumHeader-followers {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.buttonPlayList {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    inline-size: 9.5rem;
+    block-size: 2rem;
+    padding: .5rem 2rem .5rem 2rem;
+    border-radius: 4.375rem;
+    margin-block-start: 1rem;
+    cursor: pointer;
+}

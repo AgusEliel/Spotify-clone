@@ -1,0 +1,65 @@
+.buttonIcon {
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--gray10);
+}
+
+.buttonIcon-list {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.buttonIcon.is-white {
+    background: white;
+    color: var(--gray50);
+}
+
+.buttonIcon-list.is-white-border {
+    color: var(--white);
+    border: 1px solid var(--white);
+    background: transparent;
+}
+
+.buttonIcon.is-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.buttonIcon .icon-play {
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+.buttonIcon:hover:is([class*='is-']) {
+    box-shadow: 0 8px 8px rgba(0,0,0,.3);
+}
+
+.buttonIcon:active, .buttonIcon-list:active {
+    transform: scale(.9);
+}
+
+.buttonIcon-list .icon-play {
+    position: relative;
+    left: 1px;
+    top: -1px;
+    border: none;
+    font-size: .5rem;
+}
+
+.buttonIcon-list .icon-heart {
+    left: -5px;
+    top: -1px;
+    background: none;
+    font-size: 1.3rem;
+    margin: 0;
+}

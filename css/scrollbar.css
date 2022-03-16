@@ -1,0 +1,5 @@
+::-webkit-scrollbar {
+    background: transparent;
+    inline-size: .5rem;
+    block-size: .5rem;
+}

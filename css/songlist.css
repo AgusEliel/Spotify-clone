@@ -1,0 +1,33 @@
+.table {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.column {
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+.column-icons {
+    inline-size: 2rem;
+}
+
+.column-date-time {
+    inline-size: 30rem;
+}
+
+.row {
+    height: 2.5em;
+    margin: auto;
+    width: 100%;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.row-info {
+    color: white;
+}
+
+.row h4 {
+    display: inline;
+}

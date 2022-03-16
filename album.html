@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/album.css">
+    <title>Spotifu</title>
+</head>
+
+<body class="body">
+    <div class="layout">
+        <div class="layout-block">
+            <div class="layout-sidebar">
+                <div class="sidebar">
+                    <header class="logo">
+                        <a href="/" aria-current="page">
+                            <img src="./images/spotifu-logo.png" class="logo-image" width="112" height="32"
+                                alt="Logo de Spotifu" />
+                        </a>
+                    </header>
+                    <nav class="menu" aria-label="Principal">
+                        <ul class="menu-list">
+                            <li class="menuItem is-active">
+                                <a href="/" class="link" aria-current="page">
+                                    <i class="icon-home" aria-hidden="true"></i>
+                                    <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="/" class="link">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="/" class="link">
+                                    <i class="icon-creditCard" aria-hidden="true"></i>
+                                    <span>Premium</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="list" aria-labelledby="library-navigation">
+                        <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <a href="#" class="link">Creada para ti</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link">Daily Mix 1</a>
+                              </li>
+                            <li class="list-item">
+                                <a href="#" class="link">Tus Me Gusta</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link">Artistas</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="link">Podcast</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="list" aria-labelledby="playlist-navigation">
+                        <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+                        <ul class="list-content">
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="./album.html" class="link">Moonlight922</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="./playlist.html" class="link">Maracucho Bueno Muere Chiquito</a>
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="ellipsis">
+                                    <a href="./album.html" class="link">Cruz Cafuné</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="layout-main">
+                <div class="page">
+                    <div class="sticky">
+                        <div class="page-block">
+                            <header class="header" aria-label="Barra superior y menú del usuario">
+                                <div class="navigation">
+                                    <button class="navigation-prev" aria-label="Volver" title="Volver">
+                                        <i class="icon-arrowLeft" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="navigation-next" disabled aria-label="Avanzar" title="Avanzar">
+                                        <i class="icon-arrowRight" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <form class="search" role="search"
+                                    aria-label="Buscar por artistas, canciones o podcasts">
+                                    <i class="icon-search" aria-hidden="true"></i>
+                                    <input type="search" placeholder="Buscar por artistas, canciones o podcasts" />
+                                </form>
+                            </header>
+                        </div>
+                    </div>
+                    <main class="page-block">
+                        <section class="albumHeader">
+                            <div class="imageHeader">
+                                <img src="./images/moonlight.jpg" class="albumHeader-cover" alt="" />
+                            </div>
+                            <div class="dataHeader">
+                                <h1 class="albumHeader-title">Moonlight922</h1>
+                                <div class="albumHeader-data">
+                                    <h4 class="albumHeader-album"><span>Cruz Cafuné
+                                    </span>2020
+                                        13 canciones, 40 min 52 s</h4>
+                                    <h4 class="albumHeader-followers">811,503 oyentes mensuales</h4>
+                                </div>
+                                <button class="buttonPlayList">REPRODUCIR</button>
+                            </div>
+                        </section>
+                        <section class="songSearch">
+                            <div class="filter">
+                                <i class="icon-search"></i>
+                                <p>Filtrar</p>
+                            </div>
+                        </section>
+                        <section class="songList">
+                            <div class="table">
+                                <div class="column column-icons">
+                                    <div class="row"></div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list is-white-border">
+                                            <i class="icon-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column column-icons">
+                                    <div class="row"></div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <button class="buttonIcon-list">
+                                            <i class="icon-heart"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="row">TÍTULO</div>
+                                    <div class="row row-info">922 929</div>
+                                    <div class="row row-info">Mi isla / 10k</div>
+                                    <div class="row row-info">Vvs</div>
+                                    <div class="row row-info">Ojitos Aguaos</div>
+                                    <div class="row row-info">Lo Pues Intenar</div>
+                                    <div class="row row-info">Balaperdida</div>
+                                    <div class="row row-info">Mina el Hammani</div>
+                                    <div class="row row-info">Slow Mo</div>
+                                    <div class="row row-info">Tentaciones</div>
+                                    <div class="row row-info">Cuando Estoy Mal</div>
+                                    <div class="row row-info">Moonlight</div>
+                                    <div class="row row-info">En Bajo Perfil</div>
+                                    <div class="row row-info">Doble Tick Azul</div>
+                                </div>
+                                <div class="column">
+                                    <div class="row">ARTISTA</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                    <div class="row row-info">Cruz Cafuné</div>
+                                </div>
+                                <div class="column">
+                                    <div class="row">ÁLBUM</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                    <div class="row row-info">Moonlight922</div>
+                                </div>
+                                <div class="column column-date-time">
+                                    <div class="row">
+                                        <h4 class="songDate"><i class="icon-calendar"></i></h4>
+                                    </div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                    <div class="row row-info">09-01-2020</div>
+                                </div>
+                                <div class="column column-date-time">
+                                    <div class="row">
+                                        <h4 class="songTime"><i class="icon-clock"></i></h4>
+                                    </div>
+                                    <div class="row row-info">0:51</div>
+                                    <div class="row row-info">2:58</div>
+                                    <div class="row row-info">2:48</div>
+                                    <div class="row row-info">3:18</div>
+                                    <div class="row row-info">3:19</div>
+                                    <div class="row row-info">3:22</div>
+                                    <div class="row row-info">3:17</div>
+                                    <div class="row row-info">3:14</div>
+                                    <div class="row row-info">3:58</div>
+                                    <div class="row row-info">2:32</div>
+                                    <div class="row row-info">3:13</div>
+                                    <div class="row row-info">4:13</div>
+                                    <div class="row row-info">3:43</div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <div class="layout-block">
+            <footer class="layout-bottom">
+                <div class="player">
+                    <div class="player-nowPlaying">
+                        <div class="nowPlaying">
+                            <div class="nowPlaying-cover">
+                                <img src="./images/mawz.png" width="56" height="56"
+                                    alt="Portada MAWZ"
+                                    title="Portada MAWZ" />
+                            </div>
+                            <div class="nowPlaying-details">
+                                <div class="nowPlaying-description">
+                                    <a href="#song" class="nowPlaying-title">
+                                        El Inversor
+                                    </a>
+                                    <a href="#artist" class="nowPlaying-artist">
+                                        LIT Killah
+                                    </a>
+                                </div>
+                                <div class="nowPlaying-actions">
+                                    <button class="player-control" role="switch" aria-checked="false"
+                                        aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+                                        <i class="icon-heart" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-playerControls">
+                        <div class="playerControls">
+                            <div class="playerControls-buttons" aria-label="Controles de reproducción">
+                                <button class="buttonIcon" aria-label="Anterior" title="Anterior">
+                                    <i class="icon-prev" aria-hidden="true"></i>
+                                </button>
+                                <button class="buttonIcon is-white" aria-label="Reproducir" title="Reproducir">
+                                    <i class="icon-play" aria-hidden="true"></i>
+                                </button>
+                                <button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+                                    <i class="icon-next" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="playerPlayback">
+                                <span class="playerPlayback-progressTime">01:12</span>
+                                <div class="playerPlayback-slider">
+                                    <div class="slider">
+                                        <div class="slider-progress">
+                                            <button class="slider-button"
+                                                aria-label="Controlar el progreso de la reproducción"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="playerPlayback-progressTime">03:25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-playerVolume">
+                        <div class="playerVolume">
+                            <button class="player-control" aria-label="Silenciar" aria-describedby="volume-icon">
+                                <i class="icon-volumeUp" id="volume-icon" role="presentation" aria-hidden="true"
+                                    aria-label="Volumen alto"></i>
+                            </button>
+                            <div class="playerVolume-slider">
+                                <div class="slider">
+                                    <div class="slider-progress">
+                                        <button class="slider-button"
+                                            aria-label="Controlar el progreso de la reproducción"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.songSearch {
+    margin-block-start: 2.5rem;
+    margin-inline-start: -0.5rem;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter p {
+    display: inline;
+    margin: 0;
+    margin-inline-start: .5rem;
+}
