@@ -30,3 +30,5 @@
     --small: normal .75em/normal var(--baseFontFamily);
 }
 
+@media screen and (min-width: 1366px){
+}
